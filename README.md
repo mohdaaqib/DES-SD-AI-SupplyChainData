@@ -9,8 +9,20 @@ Discrete-Event Simulation: The DES model captures short-term inventory dynamics 
 
 System Dynamics: The SD model represents long-term policy adjustments by modeling aggregate demand variability, lead times, and inventory flows. It dynamically adapts safety stock levels and reorder points using rolling demand volatility and averages, ensuring resilience against fluctuations. This approach emphasizes broader planning horizons and strategic inventory policies rather than event-level execution.
 
-Integrated DES-SD Hybrid: The hybrid model connects operational execution with policy feedback through bidirectional interaction. DES simulates short-term demand fulfillment and stock movements, while SD updates reorder points and safety stock based on demand volatility and lead time trends. Feedback loops between the two layers enable adaptive control, ensuring that short-term outcomes refine long-term strategies and vice versa.
+Integrated DES-SD: The hybrid model connects operational execution with policy feedback through bidirectional interaction. DES simulates short-term demand fulfillment and stock movements, while SD updates reorder points and safety stock based on demand volatility and lead time trends. Feedback loops between the two layers enable adaptive control, ensuring that short-term outcomes refine long-term strategies and vice versa.
 
 Reinforcement Learning: The RL module frames inventory control as a Markov Decision Process (MDP), where an agent learns ordering strategies by interacting with the hybrid DES-SD environment. At each step, the agent observes system states (inventory levels, past demand, product attributes, etc) and selects actions such as placing orders. A reward function penalizes stockouts and excess inventory while reinforcing efficient policies, allowing the agent to gradually converge toward adaptive reorder strategies that improve supply chain responsiveness.
 
 Evolutionary Algorithms: The EA module is based on NSGA-II, it optimizes inventory policies by balancing multiple objectives such as minimizing costs and maximizing service levels. Candidate solutions encode parameters like reorder points and safety stock factors, which are evaluated via the DES-SD simulation. Using genetic operators for selection, crossover, and mutation, NSGA-II evolves a diverse population toward the Pareto-optimal frontier, providing decision-makers with optimized trade-offs tailored to strategic priorities.
+
+
+<img width="1920" height="967" alt="Discrete-Event Simulation" src="https://github.com/user-attachments/assets/026c8567-94da-4f69-9293-e5db6afc5960" />
+
+
+<img width="1920" height="967" alt="System Dynamics" src="https://github.com/user-attachments/assets/7a26c6f9-a684-450e-aec3-21212db45101" />
+
+
+<img width="1920" height="967" alt="Integrated DES-SD Model" src="https://github.com/user-attachments/assets/a47cc864-2d84-4e7a-a280-dec5fa53ebd9" />
+
+
+<img width="1920" height="967" alt="Integrated DES-SD-AI Models" src="https://github.com/user-attachments/assets/81a5f518-a2d3-410b-9dbd-eb06c2873ff4" />
